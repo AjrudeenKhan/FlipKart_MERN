@@ -1,13 +1,13 @@
 import axios from "axios"
 import * as actionType from '../constants/cartConstant'
 
-//const URL = 'http://localhost:8000';
+   const URL = 'http://localhost:8000';
 
 export const addToCart = (id,quantity) => async(dispatch)=>{
     try{
 
-       //const {data} =  await axios.get(`${URL}/product/${id}`);
-       const {data} =  await axios.get(`https://flip-kart-mern-back.vercel.app/product/${id}`);
+       const {data} =  await axios.get(`${URL}/product/${id}`);
+       
        dispatch({type:actionType.ADD_TO_CART,payload:{...data,quantity}});
 
     }catch(error){
