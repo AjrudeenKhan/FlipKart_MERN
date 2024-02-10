@@ -48,7 +48,7 @@ import express from 'express';
 const app = express();
 dotenv.config();
 app.use(cors({
-  origin : ["https://flip-kart-mern-frontend.vercel.app/"],
+  origin : ["https://flip-kart-mern-frontend.vercel.app"],
   methods:["POST, GET"],
   credentials:true
 }));
