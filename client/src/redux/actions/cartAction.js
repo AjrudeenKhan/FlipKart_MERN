@@ -7,7 +7,7 @@ export const addToCart = (id,quantity) => async(dispatch)=>{
     try{
 
        //const {data} =  await axios.get(`${URL}/product/${id}`);
-       const {data} =  await axios.get(`https://flip-kart-mern.vercel.app/product/${id}`);
+       const {data} =  await axios.get(`https://flip-kart-mern-back.vercel.app/product/${id}`);
        dispatch({type:actionType.ADD_TO_CART,payload:{...data,quantity}});
 
     }catch(error){

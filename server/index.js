@@ -47,13 +47,11 @@ import express from 'express';
 
 const app = express();
 dotenv.config();
-// app.use(cors({
-//   origin : ["https://flip-kart-mern-frontend.vercel.app"],
-//   methods:["POST, GET"],
-//   credentials:true
-// }));
-
-app.use(cors());
+ app.use(cors({
+   origin : ["https://flip-kart-mern-frontend.vercel.app"],
+   methods:["POST, GET"],
+   credentials:true
+ }));
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
