@@ -11,6 +11,10 @@ node_modules
 # production
 build
 
+# Ignore specific files or directories in the client folder
+file1.ext
+directory1/
+
 # misc
 .DS_Store
  
