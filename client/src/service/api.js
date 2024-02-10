@@ -5,7 +5,7 @@ import axios from 'axios';
 export const authenticateSignup = async (data)=>{
     try{
       // return await axios.post(`${URL}/signup`,data);
-       return await axios.post(`https://flip-kart-mern.vercel.app//signup`,data);
+       return await axios.post(`https://flip-kart-mern.vercel.app/signup`,data);
 
     } catch(error){
         console.log("Error while calling signup api",error.response.data);
