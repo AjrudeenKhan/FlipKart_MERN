@@ -55,7 +55,7 @@ app.use('/', Router);
 
 // Define the deployment link based on the environment
 const DEPLOYMENT_LINK = process.env.NODE_ENV === 'production'
-  ? 'https://vercel.com/ajrudeen-khans-projects/flip-kart-mern-backend/5vb4Sun9B88p8BSaKy61vRRav4gW'
+  ? 'flip-kart-mern-backend/23Q1R3wrWqF5rvkP4K5dpLesyYcT'
   : 'http://localhost:8000'; // Update with your local development link
 
 // New route to serve the link
