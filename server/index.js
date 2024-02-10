@@ -54,15 +54,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);
 
 // Define the deployment link based on the environment
-const DEPLOYMENT_LINK = process.env.NODE_ENV === 'production'
-  ? 'flip-kart-mern-backend/23Q1R3wrWqF5rvkP4K5dpLesyYcT'
-  : 'http://localhost:8000'; // Update with your local development link
+// const DEPLOYMENT_LINK = process.env.NODE_ENV === 'production'
+//   ? 'flip-kart-mern-backend/23Q1R3wrWqF5rvkP4K5dpLesyYcT'
+//   : 'http://localhost:8000'; // Update with your local development link
 
-// New route to serve the link
-app.get('/flipkart', (req, res) => {
-  console.log('Redirecting to:', DEPLOYMENT_LINK);
-  res.redirect(DEPLOYMENT_LINK);
-});
+// // New route to serve the link
+// app.get('/flipkart', (req, res) => {
+//   console.log('Redirecting to:', DEPLOYMENT_LINK);
+//   res.redirect(DEPLOYMENT_LINK);
+// });
 
 const PORT = 8000;
 
