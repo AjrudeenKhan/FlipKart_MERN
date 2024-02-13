@@ -19,8 +19,8 @@ router.get('/productThree',getProductsThree);
 //router.get('/products3',getProducts3)
 router.get('/product/:id',getProductById)
 router.post('/payment',addPaymentGateway);
-router.get('*',(req,res)=>{
-    res.send('404 Page Not Found')
+router.get('/',(req,res)=>{
+    res.send('Hii FlipKart Clone API ........')
 })
 
 
