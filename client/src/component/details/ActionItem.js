@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/actions/cartAction';
 import { useState } from 'react';
-import { payUsingPayment } from '../../service/api';
-import {post} from '../../utils/paytm'
+
+
 
 const LeftContainer = styled(Box)(({theme})=>({
 
@@ -50,24 +50,14 @@ const ActionItem =({product})=>{
         navigate('/cart');
     }
 
-    const buyNow = () =>{
-      let response =   payUsingPayment({amount:500,email:'codeforinterview01@gmail.com'});
-      let information = {
-        action: 'https://securegw-stage.paytm.in/order/process',
-        params:response,
-      }
-      post(information);
-        
-
-
-    }
+    
     return(
         <LeftContainer >
             <Box style={{ padding:'15px 20px', border:'1px solid #f0f0f0',}}>
             <Image  src={product.detailUrl} alt='Detail ImagePic'/>
             </Box>
             <StyledButton variant='contained' onClick={()=>addItemToCart()} style={{marginRight:10, background:'#ff9f00'}}> <Cart/>Add to Cart</StyledButton>
-            <StyledButton variant='contained' onClick={()=>buyNow()} style={{background:'#fb641b'}}><Flash/>Buy Now</StyledButton>
+            <StyledButton variant='contained'  style={{background:'#fb641b'}}><Flash/>Buy Now</StyledButton>
 
         </LeftContainer >
       

@@ -42,7 +42,17 @@ import bodyParser from 'body-parser';
 
 const app = express();
 dotenv.config();
-app.use(cors());
+//  app.use(cors());
+
+
+const corsOptions = {
+  origin: 'https://flip-kart-mern-froentend.vercel.app/', // Update with your actual frontend domain
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
+
+
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);

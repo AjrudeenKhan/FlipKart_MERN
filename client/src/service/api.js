@@ -1,6 +1,7 @@
 import axios from 'axios';
 
- const URL = 'http://localhost:8000';
+ //const URL = 'http://localhost:8000';
+ const URL = 'https://flip-kart-mern.vercel.app';
 
 export const authenticateSignup = async (data)=>{
     try{
@@ -22,16 +23,7 @@ export const authenticateLogin = async (data)=>{
     }
 };
 
-export const payUsingPayment = async (data) =>{
-    try{
-        let response = await axios.post(` https://flip-kart-mern-5mxo.vercel.app/payment`,data);
-        return response.data;
 
-    }catch(error){
-        console.log("Error while calling payment api",error);
-    }
-
-}
 
 
 
