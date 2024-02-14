@@ -23,28 +23,6 @@ This is a web-based FlipKart Clone application with the following features:
 - Express
 - Mongoose
 
-## Steps to Run Locally
-
-1. Clone this repository.
-2. Navigate to the `client` folder.
-3. Run `npm install` to install the required packages.
-4. Run `npm start` to start the client.
-5. Open a new console, navigate to the `server` folder.
-6. Run `npm install` to install the Node packages.
-7. Run `npm start` to start the server.
-8. Access the application at `http://localhost:3000/`.
-9. open new console in vscode and cd to server.
-10. Run command 'npm install'.
-11. Once the Node packages are installed.
-12. Once the Node packages are installed
-13. Run command 'npm start'
-14. At this point both client and servers are running.
-15. Now you will prompted to home route
-16. Go and register
-17. Once you are registered,you can login.
-18. The moment you are loggedin,you will be prompted to new routes that is products.
-19. From this routes,one can search products and create cart from the list of products.
-20. Created cart can be seen by the loggedin user.
 
 ## Functionality
 
@@ -69,7 +47,30 @@ This is a web-based FlipKart Clone application with the following features:
 ![Screenshot (10)](https://github.com/AjrudeenKhan/FlipKart_MERN/assets/129118661/46c98026-cdf0-40d0-8e99-d72d575b5169)
 
 ### Cart Page
-![Screenshot (11)](https://github.com/AjrudeenKhan/FlipKart_MERN/assets/129118661/6aeffc48-1043-4c27-a91c-4051b9bc2b93)
+![Screenshot (11)](https://github.com/AjrudeenKhan/FlipKart_MERN/assets/129118661/6aeffc48-1043-4c27-a91c-4051b9bc2b93 
+
+## Steps to Run Locally
+
+1. Clone this repository.
+2. Navigate to the `client` folder.
+3. Run `npm install` to install the required packages.
+4. Run `npm start` to start the client.
+5. Open a new console, navigate to the `server` folder.
+6. Run `npm install` to install the Node packages.
+7. Run `npm start` to start the server.
+8. Access the application at `http://localhost:3000/`.
+9. open new console in vscode and cd to server.
+10. Run command 'npm install'.
+11. Once the Node packages are installed.
+12. Once the Node packages are installed
+13. Run command 'npm start'
+14. At this point both client and servers are running.
+15. Now you will prompted to home route
+16. Go and register
+17. Once you are registered,you can login.
+18. The moment you are loggedin,you will be prompted to new routes that is products.
+19. From this routes,one can search products and create cart from the list of products.
+20. Created cart can be seen by the loggedin user.
 
 
 ## Feedback
@@ -78,5 +79,5 @@ Feel free to drop your feedback; there is always room for improvement. I appreci
 
 ## Author
 
-[Your Name]
+Ajrudeen Khan
 
