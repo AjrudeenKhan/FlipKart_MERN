@@ -47,7 +47,7 @@ This is a web-based FlipKart Clone application with the following features:
 ![Screenshot (10)](https://github.com/AjrudeenKhan/FlipKart_MERN/assets/129118661/46c98026-cdf0-40d0-8e99-d72d575b5169)
 
 ### Cart Page
-![Screenshot (11)](https://github.com/AjrudeenKhan/FlipKart_MERN/assets/129118661/6aeffc48-1043-4c27-a91c-4051b9bc2b93 
+![Screenshot (11)](https://github.com/AjrudeenKhan/FlipKart_MERN/assets/129118661/6aeffc48-1043-4c27-a91c-4051b9bc2b93 )
 
 ## Steps to Run Locally
 
