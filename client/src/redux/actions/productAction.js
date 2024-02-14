@@ -1,44 +1,12 @@
 
-// import axios from "axios"
-
-// import * as actionTypes from '../constants/productConstant';
 
 
-// const URL  = 'http://localhost:8000';
 
-// export const getProducts = () => async (dispatch) =>{
-//     try{
-
-//         const {data} = await axios.get(`${URL}/products`); // response isliye nhi likha kquki response ke obj me se sirf humhe data chahiye mai response obj ko janta hu woh hi config, data, status, message and all
-//         // console.log(response);
-//         dispatch({type:actionTypes.GET_PRODUCTS_SUCCESS,payload:data})
-
-
-//     }catch(error){
-//         dispatch({type:actionTypes.GET_PRODUCTS_FAIL,payload:error.message})
-//     }
-// }
-
-
-// /* 
-
-// let obj = {
-//     config:{},
-//     data: [];
-//     header: [],
-//     staus:200,
-//     mesage: ''
-
-//     obj.data
-//     {data} = obj
-
-// }
-// */
 import axios from "axios";
 import * as actionTypes from '../constants/productConstant';
 
-//const URL = 'http://localhost:8000';
-const URL = 'https://flip-kart-mern.vercel.app'
+const URL = 'http://localhost:8000';
+//const URL = 'https://flip-kart-mern.vercel.app'
 
 export const getProducts = () => async (dispatch) => {
   try {
@@ -72,3 +40,5 @@ export const getProductDetails=(id) =>async (dispatch) =>{
   }
 
 }
+
+
