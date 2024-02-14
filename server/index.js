@@ -42,15 +42,7 @@ import bodyParser from 'body-parser';
 
 const app = express();
 dotenv.config();
-  //app.use(cors());
-
-
-  const corsOptions = {
-    origin: 'https://flip-kart-mern.vercel.app',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  };
-  
-  app.use(cors(corsOptions));
+  app.use(cors());
   
 
 
@@ -63,9 +55,15 @@ const USERNAME = process.env.DB_USERNAME;
 const PASSWORD = process.env.DB_PASSWORD;
 
 Connection(USERNAME, PASSWORD);
-
-app.listen(PORT, () => {
-  console.log(`server is running on port ${PORT} `);
+const server = app.listen(PORT, () => {
+  server.timeout = 60000; // Set timeout to 60 seconds
+  console.log(`Server is running on port ${PORT}`);
   DefaultData();
   DefaultDataThree();
 });
+
+// app.listen(PORT, () => {
+//   console.log(`server is running on port ${PORT} `);
+//   DefaultData();
+//   DefaultDataThree();
+// });
