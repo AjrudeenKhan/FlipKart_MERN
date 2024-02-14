@@ -42,17 +42,16 @@ import bodyParser from 'body-parser';
 
 const app = express();
 dotenv.config();
-  app.use(cors());
+  //app.use(cors());
 
 
-// const corsOptions = {
-//   origin: 'https://flip-kart-mern-froentend.vercel.app/', // Update with your actual frontend domain
-//   methods: ['GET', 'POST'], // Allow only specified methods
-//   credentials: true, // Allow cookies and HTTP authentication to be included
-//   optionsSuccessStatus: 200,
-// };
-
-//app.use(cors(corsOptions));
+  const corsOptions = {
+    origin: 'https://flip-kart-mern.vercel.app',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  };
+  
+  app.use(cors(corsOptions));
+  
 
 
 app.use(bodyParser.json({ extended: true }));
